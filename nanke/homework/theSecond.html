@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script lang ="javascript" type="text/javascript">
+        submit = function () {
+            //window.alert(document.getElementById("name").value);
+            if (document.getElementById("name").value.length == 0) {
+                window.alert("姓名不能为空");
+            }
+            else if (document.getElementById("password").value.length == 0) {
+                window.alert("密码不能为空");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type ="text" id ="name" />
+        <input type ="password" id ="password"  />
+        <input type ="button" value="提交" id ="button" onclick="submit()" />
+    </div>
+</body>
+</html>

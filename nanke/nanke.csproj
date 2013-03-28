@@ -58,6 +58,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Homework.html" />
+    <Content Include="homework\theSecond.html" />
+    <Content Include="res\fbg_bg.jpg" />
+    <Content Include="res\hbg_img.jpg" />
+    <Content Include="res\img1.jpg" />
+    <Content Include="res\pix1.jpg" />
+    <Content Include="res\pix2.jpg" />
+    <Content Include="res\pix3.jpg" />
+    <Content Include="res\pix4.jpg" />
+    <Content Include="res\pix5.jpg" />
+    <Content Include="res\pix6.jpg" />
+    <Content Include="res\search.gif" />
+    <Content Include="res\search_btn.gif" />
+    <Content Include="res\spacer.gif" />
+    <Content Include="res\submit.gif" />
+    <Content Include="res\userpic.gif" />
+    <Content Include="src\css\style.css" />
+    <Content Include="src\js\arial.js" />
+    <Content Include="src\js\cufon-yui.js" />
+    <Content Include="src\js\cuf_run.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +98,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
