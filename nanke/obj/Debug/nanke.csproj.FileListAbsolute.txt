@@ -3,3 +3,8 @@ D:\My Documents\GitHub\nanke\nanke\bin\nanke.pdb
 D:\My Documents\GitHub\nanke\nanke\obj\Debug\nanke.csprojResolveAssemblyReference.cache
 D:\My Documents\GitHub\nanke\nanke\obj\Debug\nanke.dll
 D:\My Documents\GitHub\nanke\nanke\obj\Debug\nanke.pdb
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\nanke.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\nanke.pdb
+D:\用户目录\Documents\GitHub\nanke\nanke\obj\Debug\nanke.csprojResolveAssemblyReference.cache
+D:\用户目录\Documents\GitHub\nanke\nanke\obj\Debug\nanke.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\obj\Debug\nanke.pdb
