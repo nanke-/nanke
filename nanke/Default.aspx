@@ -24,9 +24,9 @@ Released for free under a Creative Commons Attribution 3.0 License
         <ul>
           <li class="active"><a href="Default.aspx">Home</a></li>
           <li><a href="Homework.html">My Homework</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="Default.aspx">About Us</a></li>
+          <li><a href="Default.aspx">Blog</a></li>
+          <li><a href="Default.aspx">Contact Us</a></li>
         </ul>
       </div>
       <div class="clr"></div>
