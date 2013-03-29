@@ -18,7 +18,9 @@ p.spec { text-align:left;}
 a { color:#20bac6; text-decoration:underline;}
 a.com { }
 
-.header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar { margin:0; padding:0;}
+.header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar { margin:0; padding:0;
+    width: 372px;
+}
 
 /* header */
 .header { }

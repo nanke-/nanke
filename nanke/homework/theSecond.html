@@ -13,15 +13,45 @@ Released for free under a Creative Commons Attribution 3.0 License
     <script type="text/javascript" src="../src/js/cuf_run.js"></script>
     <!-- CuFon ends -->
     <script lang="javascript" type="text/javascript">
-        submit = function () {
+        function submit() {
             if (document.getElementById("name").value.length == 0) {
-                window.alert("姓名不能为空");
+                document.getElementById("namehint").style.display = "block";
             }
             else if (document.getElementById("password").value.length == 0) {
-                window.alert("密码不能为空");
+                document.getElementById("passwordhint").style.display = "block";
+            }
+            else {
+                window.alert("log in success");
             }
         }
+        function displaynh() {
+            if (document.getElementById("name").value.length == 0) {
+                document.getElementById("namehint").style.display = "block";
+            }
+        }
+        function displayph() {
+            if (document.getElementById("password").value.length == 0) {
+                document.getElementById("passwordhint").style.display = "block";
+            }
+        }
+        function hidenh(){
+            document.getElementById("namehint").style.display = "none";
+        }
+        function hideph(){
+            document.getElementById("passwordhint").style.display = "none";
+        }
     </script>
+    <style type="text/css">
+        #inputEmail {
+            width: 141px;
+            height: 28px;
+        }
+
+        #inputPassword {
+            height: 27px;
+            width: 140px;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,15 +60,15 @@ Released for free under a Creative Commons Attribution 3.0 License
         <div class="header">
             <div class="header_resize">
                 <div class="logo">
-                    <h1><a href="Default.aspx">ASP<span>.NET</span> <small>my homework here</small></a></h1>
+                    <h1><a href="../Default.aspx">ASP<span>.NET</span> <small>my homework here</small></a></h1>
                 </div>
                 <div class="menu_nav">
                     <ul>
-                        <li><a href="Default.aspx">Home</a></li>
-                        <li class="active"><a href="Homework.html">My Homework</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="../Default.aspx">Home</a></li>
+                        <li class="active"><a href="../Homework.html">My Homework</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="clr"></div>
@@ -47,72 +77,34 @@ Released for free under a Creative Commons Attribution 3.0 License
 
         <div class="content">
             <div class="content_resize">
-                <h1> Client Technology</h1> <br/>
+                <h1>Client Technology</h1>
+                <br />
 
-                <form class="form-horizontal">
+                <!--<form class="form-horizontal" onSubmit ="return submit();">-->
                     <div class="control-group">
-                        <label class="control-label" for="inputEmail">Email</label>
+                        <label class="control-label" for="inputEmail">Name</label>
                         <div class="controls">
-                            <input type="text" id="inputEmail" placeholder="Email">
+                            <input type="text" id="name" placeholder="Name" onblur ="displaynh()" onfocus="hidenh()">
+                            <span class="help-inline" id="namehint" style="display:none">Please enter the name</span>
                         </div>
-                        <br/>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="inputPassword">Password</label>
                         <div class="controls">
-                            <input type="password" id="inputPassword" placeholder="Password">
+                            <input type="password" id="password" placeholder="Password" onblur="displayph()" onfocus="hideph()">
+                            <span class="help-inline" id="passwordhint" style="display:none">Please enter the password</span>
                         </div>
                     </div>
-                    <br/>
                     <div class="control-group">
                         <div class="controls">
                             <label class="checkbox">
                                 <input type="checkbox">
                                 Remember me
-                            </label><br/>
-                            <button type="submit" class="btn">Sign in</button>
+                            </label> <br />
+                            <button type="submit" class="btn btn-small" onclick="submit()">Sign in</button>
                         </div>
                     </div>
-                </form>
-                <div class="sidebar">
-                    <div class="searchform">
-                        <form id="formsearch" name="formsearch" method="post" action="">
-                            <span>
-                                <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" value="Search our ste:" type="text" /></span>
-                            <input name="button_search" src="../res/search_btn.gif" class="button_search" type="image" />
-                        </form>
-                    </div>
-                    <div class="gadget">
-                        <h2 class="star"><span>Sidebar</span> Menu</h2>
-                        <div class="clr"></div>
-                        <ul class="sb_menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">TemplateInfo</a></li>
-                            <li><a href="#">Style Demo</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Archives</a></li>
-                            <li><a href="http://www.dreamtemplate.com/" title="վӤ̘ӄ">Web Templates</a></li>
-                        </ul>
-                    </div>
-                    <div class="gadget">
-                        <h2 class="star"><span>Sponsors</span></h2>
-                        <div class="clr"></div>
-                        <ul class="ex_menu">
-                            <li><a href="http://www.dreamtemplate.com" title="վӤ̘ӄ">DreamTemplate</a><br />
-                                Over 6,000+ Premium Web Templates</li>
-                            <li><a href="http://www.templatesold.com/">TemplateSOLD</a><br />
-                                Premium WordPress &amp; Joomla Themes</li>
-                            <li><a href="http://www.imhosted.com" title="Affordable Hosting">ImHosted.com</a><br />
-                                Affordable Web Hosting Provider</li>
-                            <li><a href="http://www.myvectorstore.com" title="Stock Icons">MyVectorStore</a><br />
-                                Royalty Free Stock Icons</li>
-                            <li><a href="http://www.evrsoft.com" title="Website Builder">Evrsoft</a><br />
-                                Website Builder Software &amp; Tools</li>
-                            <li><a href="http://www.csshub.com/" title="CSS Templates">CSS Hub</a><br />
-                                Premium CSS Templates</li>
-                        </ul>
-                    </div>
-                </div>
+                <!--</form>-->
                 <div class="clr"></div>
             </div>
         </div>
