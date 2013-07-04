@@ -1,21 +1,21 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="nanke.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Register.master.cs" Inherits="nanke.SiteMaster" %>
 
 <!DOCTYPE html>
 <html lang="en">
-<head runat="server">
+<head id="Head1" runat="server">
     <meta charset="utf-8" />
     <title><%: Page.Title %> - nanke's blog</title>
-    <asp:PlaceHolder runat="server">     
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">     
           <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>  
-    <webopt:BundleReference runat="server" Path="~/Content/css" /> 
+    <webopt:BundleReference ID="BundleReference1" runat="server" Path="~/Content/css" /> 
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
-    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent1" />
 </head>
 <body>
-    <form runat="server">
-    <asp:ScriptManager runat="server">
+    <form id="Form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
         <Scripts>
             <%--Framework Scripts--%>
             <asp:ScriptReference Name="MsAjaxBundle" />
@@ -34,47 +34,45 @@
 
         </Scripts>
     </asp:ScriptManager>
-        </form>
     <header>
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    <a runat="server" href="~/">nanke - 吴雄平</a>
+                    <a id="A1" runat="server" href="~/">nanke - 吴雄平</a>
                 </p>
             </div>
             <div class="float-right">
                 <section id="login">
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <asp:LoginView ID="LoginView1" runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul>
                                 <li><a id="registerLink" runat="server" href="~/Account/Register.aspx">Register</a></li>
-                                <li><a id="loginLink" runat="server" href="~/Account/Login.aspx">Log in</a></li> 
-                                <li><a id="MulTableLink" runat="server" href="~/Account/MulTable.aspx">MulTable</a></li>  
+                                <li><a id="loginLink" runat="server" href="~/Account/Login.aspx">Log in</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <p>
-                                Hello, <a runat="server" class="username" href="~/Account/Manage.aspx" title="Manage your account">
-                                    <asp:LoginName runat="server" CssClass="username" /></a>!
-                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
+                                Hello, <a id="A2" runat="server" class="username" href="~/Account/Manage.aspx" title="Manage your account">
+                                    <asp:LoginName ID="LoginName1" runat="server" CssClass="username" /></a>!
+                                <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
                             </p>
                         </LoggedInTemplate>
                     </asp:LoginView>
                 </section>
                 <nav>
                     <ul id="menu">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About.aspx">About</a></li>
-                        <li><a runat="server" href="~/Contact.aspx">Contact</a></li>
+                        <li><a id="A3" runat="server" href="~/">Home</a></li>
+                        <li><a id="A4" runat="server" href="~/About.aspx">About</a></li>
+                        <li><a id="A5" runat="server" href="~/Contact.aspx">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <div id="body">
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent1" />
         <section class="content-wrapper main-content clear-fix">
-            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            <asp:ContentPlaceHolder runat="server" ID="MainContent1" />
         </section>
     </div>
     <footer>
@@ -84,5 +82,6 @@
             </div>
         </div>
     </footer>
+    </form>
 </body>
 </html>

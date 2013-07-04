@@ -2,46 +2,68 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+        <script lang="javascript" type="text/javascript">
+            function submit() {
+                if (document.getElementById("name").value.length == 0) {
+                    document.getElementById("namehint").style.display = "block";
+                }
+                else if (document.getElementById("password").value.length == 0) {
+                    document.getElementById("passwordhint").style.display = "block";
+                }
+                else {
+                    window.alert("log in success");
+                }
+            }
+            function displaynh() {
+                if (document.getElementById("name").value.length == 0) {
+                    document.getElementById("namehint").style.display = "block";
+                }
+            }
+            function displayph() {
+                if (document.getElementById("password").value.length == 0) {
+                    document.getElementById("passwordhint").style.display = "block";
+                }
+            }
+            function hidenh() {
+                document.getElementById("namehint").style.display = "none";
+            }
+            function hideph() {
+                document.getElementById("passwordhint").style.display = "none";
+            }
+    </script>
     <hgroup class="title">
         <h1><%: Title %>.</h1>
     </hgroup>
-    <section id="loginForm">
-        <h2>Use a local account to log in.</h2>
-        <asp:Login runat="server" ViewStateMode="Disabled" RenderOuterTable="false">
-            <LayoutTemplate>
-                <p class="validation-summary-errors">
-                    <asp:Literal runat="server" ID="FailureText" />
-                </p>
-                <fieldset>
-                    <legend>Log in Form</legend>
-                    <ol>
-                        <li>
-                            <asp:Label runat="server" AssociatedControlID="UserName">User name</asp:Label>
-                            <asp:TextBox runat="server" ID="UserName" />
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName" CssClass="field-validation-error" ErrorMessage="The user name field is required." />
-                        </li>
-                        <li>
-                            <asp:Label runat="server" AssociatedControlID="Password">Password</asp:Label>
-                            <asp:TextBox runat="server" ID="Password" TextMode="Password" />
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="field-validation-error" ErrorMessage="The password field is required." />
-                        </li>
-                        <li>
-                            <asp:CheckBox runat="server" ID="RememberMe" />
-                            <asp:Label runat="server" AssociatedControlID="RememberMe" CssClass="checkbox">Remember me?</asp:Label>
-                        </li>
-                    </ol>
-                    <asp:Button runat="server" CommandName="Login" Text="Log in" />
-                </fieldset>
-            </LayoutTemplate>
-        </asp:Login>
-        <p>
-            <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Register</asp:HyperLink>
-            if you don't have an account.
-        </p>
-    </section>
+        <h2>客户端进行用户名和密码的非空判断</h2>
+    <fieldset>
+        <legend> log in form</legend>
 
-    <section id="socialLoginForm">
-        <h2>Use another service to log in.</h2>
-        <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
-    </section>
+    <ol>
+        <li>
+            <label class="control-label" for="inputEmail">Name</label> 
+            <input type="text" id="name" placeholder="Name" onblur ="displaynh()" onfocus="hidenh()">
+            <span class="field-validation-error" id="namehint" style="display:none">Please enter the name</span>
+            <br />
+        </li>
+
+        <li>
+            <label class="control-label" for="inputPassword">Password</label>
+            <input type="password" id="password" placeholder="Password" onblur="displayph()" onfocus="hideph()">
+            <span class="field-validation-error" id="passwordhint" style="display:none">Please enter the password</span>
+            <br />
+
+        </li>
+
+        <li>
+            <label > <input type="checkbox" /> Remember me </label> <br />
+            <button onclick="submit()">log in</button>
+            <br />
+        </li>
+
+    </ol>
+            </fieldset>
+    <!--</section> -->
+
+
+
 </asp:Content>

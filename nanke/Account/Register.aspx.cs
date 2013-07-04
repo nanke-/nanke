@@ -14,6 +14,11 @@ namespace nanke.Account
         protected void Page_Load(object sender, EventArgs e)
         {
             RegisterUser.ContinueDestinationPageUrl = Request.QueryString["ReturnUrl"];
+            if (!Page.IsPostBack)
+            {
+                onlineNum.Text = Application["UserCount"].ToString();
+                statNum.Text = Application["StatCount"].ToString();
+            }
         }
 
         protected void RegisterUser_CreatedUser(object sender, EventArgs e)
