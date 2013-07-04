@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace nanke {
-    
-    
-    public partial class Default {
+namespace nanke
+{
+
+
+    public partial class _Default
+    {
     }
 }

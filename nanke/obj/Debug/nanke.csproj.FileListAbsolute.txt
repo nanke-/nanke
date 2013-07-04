@@ -1,10 +1,30 @@
-D:\My Documents\GitHub\nanke\nanke\bin\nanke.dll
-D:\My Documents\GitHub\nanke\nanke\bin\nanke.pdb
-D:\My Documents\GitHub\nanke\nanke\obj\Debug\nanke.csprojResolveAssemblyReference.cache
-D:\My Documents\GitHub\nanke\nanke\obj\Debug\nanke.dll
-D:\My Documents\GitHub\nanke\nanke\obj\Debug\nanke.pdb
 D:\用户目录\Documents\GitHub\nanke\nanke\bin\nanke.dll
 D:\用户目录\Documents\GitHub\nanke\nanke\bin\nanke.pdb
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\Antlr3.Runtime.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\AspNet.ScriptManager.jQuery.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.AspNet.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.Core.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.OAuth.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.OpenId.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\EntityFramework.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\Microsoft.ScriptManager.WebForms.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\Microsoft.Web.Infrastructure.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\System.Web.Optimization.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\System.Web.Providers.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\WebGrease.dll
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\EntityFramework.xml
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.Core.xml
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.OAuth.xml
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.OpenId.xml
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\用户目录\Documents\GitHub\nanke\nanke\bin\DotNetOpenAuth.AspNet.xml
 D:\用户目录\Documents\GitHub\nanke\nanke\obj\Debug\nanke.csprojResolveAssemblyReference.cache
 D:\用户目录\Documents\GitHub\nanke\nanke\obj\Debug\nanke.dll
 D:\用户目录\Documents\GitHub\nanke\nanke\obj\Debug\nanke.pdb
