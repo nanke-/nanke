@@ -32,8 +32,7 @@
         <li class="three">
             <h5>作业五</h5>
             实现在线人数和网站访问量统计 +　制作注册页面进行服务器端验证<br />
-            在线人数和网站访问量统计主要利用session 和　全局的Application实现。中间为了
-            记录总的访问量，<br />将该数据保存在本地文件中了。
+            在线人数和网站访问量统计主要利用session 和　全局的Application实现.
             <a runat="server" href="~/Account/Register.aspx">Learn more…</a>
         </li>
     </ol>
